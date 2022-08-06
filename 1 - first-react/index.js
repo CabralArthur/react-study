@@ -1,27 +1,28 @@
-// => Create a custom React Component
-// => Call it "MainContent"
-// => This component should return a simple h1 element that says "I'm learning React"
-// => Put this component bellow the Navbar
+// const MainComponent = () => {
+//     return (
+//         <h1>"I'm learning React!"</h1>
+//     )
+// };
 
-const NavBar = () => {
-    return (
-        <h1>My NavBar</h1>
-    );
-};
 
-const MainComponent = () => {
-    return (
-        <h1>"I'm learning React!"</h1>
-    )
-};
+// ReactDOM.render(<MainComponent/>, document.getElementById("root"));
 
-const Wrapper = () => {
-    return (
-        <div>
-            <NavBar/>
-            <MainComponent/>
-        </div>
-    )
-}
+/*
+    Challenge - recreate the above line of code in vanilla JS creating and
+    appending an h1 to our div #root
 
-ReactDOM.render(<Wrapper/>, document.getElementById("root"))
+    - Create an new h1 element [OK]
+    - Give it some textContext [OK]
+    - Give it a class name of "header" [OK]
+    - Append it as a child of the div#root [OK]
+*/
+
+const h1 = document.createElement('h1');
+
+h1.innerText = "I'm learning React!";
+
+h1.classList.add('header');
+
+const root = document.querySelector('div#root');
+
+root.appendChild(h1);
