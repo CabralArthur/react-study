@@ -17,10 +17,10 @@ const MainComponent = () => {
 
 const Wrapper = () => {
     return (
-        <>
+        <div>
             <NavBar/>
             <MainComponent/>
-        </>
+        </div>
     )
 }
 
