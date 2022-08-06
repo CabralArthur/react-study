@@ -1,0 +1,1 @@
+ReactDOM.render(<h1>Oi full</h1>, document.getElementById("root"))
